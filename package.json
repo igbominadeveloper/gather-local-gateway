@@ -1,0 +1,24 @@
+{
+  "name": "gather-local-gateway",
+  "version": "1.0.0",
+  "description": "The Main GraphQL API gateway for all Gather clients.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config .",
+    "start:dev": "nodemon -r dotenv/config . -e graphql,js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^0.17.0",
+    "apollo-server": "^2.15.1",
+    "dotenv": "^8.2.0",
+    "force": "^0.0.3",
+    "graphql": "^15.3.0",
+    "node-fetch": "^2.6.1"
+  }
+}
